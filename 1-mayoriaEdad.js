@@ -7,6 +7,8 @@ Si el usuario respondesi, se imprimirá por pantalla lo siguiente "Entonces pued
 Si el usuario responde no, se imprimirá por pantalla "Lo siento, no puedes ir a la disco"
 Si el usuario elige una opción diferente, se deberá imprimir por pantalla: "Lo siento, la opción indicada no es válida."*/
 
+//Condicional IF
+
 var mayorDeEdad = window.prompt("Es usted mayor de edad?"); 
 
     if (mayorDeEdad == "si")
@@ -20,3 +22,19 @@ var mayorDeEdad = window.prompt("Es usted mayor de edad?");
             {
                 document.write("Lo siento, la opcion indicada no es válida");
             }
+
+//Condicional SWITCH
+
+var mayorDeEdad = window.prompt("Es usted mayor de edad?");
+
+switch(mayorDeEdad) {
+    case "si":
+        document.write("Entonces puedes ir a la disco");
+    break;
+    case "no":
+        document.write("Lo siento, no puedes ir a la disco");
+    break;
+    default:
+        document.write("Lo siento, la opcion indicada no es valida");
+    break; 
+}
