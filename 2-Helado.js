@@ -34,3 +34,24 @@ if(topping == "oreo") {
 
 precioFinal = helado + precio;
 document.write("El helado cuesta " + precioFinal + " €");
+
+//Condicional SWITCH
+
+switch(topping) {
+    case "oreo":
+        precio = 1;
+    break;
+    case "kitkat":
+        precio = 1.50;
+    break;
+    case "brownie":
+        precio = 0.75;
+    break;
+    case "lacasitos":
+        precio = 0.95;
+    break;
+    default:
+        document.write("No tenemos este topping, lo sentimos. ");
+        precio = 0;
+    break;
+}
